@@ -16,7 +16,7 @@ INSERT INTO student (name, major) VALUES ('小綠', '英文');
 INSERT INTO student (name, major) VALUES ('小綠', '數學');
 ```
 
-FOREIGN KEY 一般指向 PRIMARY KEY.
+
 
 
 
