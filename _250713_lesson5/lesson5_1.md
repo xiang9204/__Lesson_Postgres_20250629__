@@ -8,3 +8,24 @@ CREATE TABLE student (
 	PRIMARY KEY(student_id)
 );
 ```
+
+### 新增資料到 student 資料表
+```SQL
+INSERT INTO student (name, major) VALUES ('小白', '地理');
+INSERT INTO student (name, major) VALUES ('小綠', '英文');
+INSERT INTO student (name, major) VALUES ('小綠', '數學');
+```
+
+### x
+```SQL
+
+```
+
+
+
+
+### x
+```SQL
+
+```
+

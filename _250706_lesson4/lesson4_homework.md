@@ -5,7 +5,7 @@ SELECT sum(新增死亡數) AS 亞洲總死亡數
 FROM world
 WHERE 洲名 = '亞洲';
 ```
-Result
+_Result_
 | 亞洲總死亡數 |
 | --- |
 | 1437516 |
