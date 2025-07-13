@@ -1,4 +1,4 @@
--- 刪除 employee TABLE
+- 刪除 employee TABLE
 DROP TABLE IF EXISTS employee;
 
 -- 創建 employee TABLE
