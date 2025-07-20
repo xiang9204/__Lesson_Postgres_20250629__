@@ -2,3 +2,5 @@
 
 - FOREIGN KEY 一般指向 PRIMARY KEY.
 
+- "select "stationCode" "
+- "select \"stationCode\" "  (""字串內，還有符號，在符號前利用 backslash \ 來代表該字為符號， \n 表換行) [單行字串]
