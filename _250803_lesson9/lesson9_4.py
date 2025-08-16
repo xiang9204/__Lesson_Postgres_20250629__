@@ -47,7 +47,9 @@ def main():
     stations = get_all_stations()
     print("所有台鐵車站資訊的站點名稱：", stations)
 
-"""
+
+#依序 print 的寫法
+""" 
 def main():
     stations = get_all_stations()
     if stations:
