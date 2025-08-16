@@ -1,8 +1,9 @@
 psycopg2-binary
 python-dotenv
 
+
+
 # pip install -r requirements.txt 
 
-'''
-可以在 terminal 內執行此敘述，一次安裝需要的套件。
-'''
+
+# 可以在 terminal 內執行此敘述，一次安裝需要的套件。
