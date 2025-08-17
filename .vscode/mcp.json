@@ -1,7 +1,7 @@
 {
   "servers": {
 
-    
+    /*
     "vscode_postgres": {
       "command": "npx",
       "args": [
@@ -10,7 +10,8 @@
         "postgresql://postgres:raspberry@host.docker.internal:5432/postgres"
       ]
     },
-    
+    */
+
     "render_postgres": {
       "command": "npx",
       "args": [
