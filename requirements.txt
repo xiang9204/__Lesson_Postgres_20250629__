@@ -1,6 +1,6 @@
 psycopg2-binary
 python-dotenv
-
+streamlit
 
 
 # pip install -r requirements.txt 
