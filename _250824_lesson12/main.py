@@ -103,11 +103,17 @@ else:
 st.write("您選擇的車站:", station)
 st.write("日期範圍:", start_date, "至", end_date)
 
-# 請使用datasource.get_station_data_by_date 函數取得資料,並顯示資料
+# 使用 datasource.get_station_data_by_date 取得資料，並以表格顯示
 data = datasource.get_station_data_by_date(station, start_date, end_date)
-if data is None:
+if data is None or len(data) == 0:
     st.error("無法取得車站資料，請稍後再試。")
 else:
+    # 假設 data 為 list of dict 或 list of tuple
+    # 若為 tuple，需指定欄位名稱
+    columns = ["日期", "車站名稱", "進站人數", "出站人數"]
+    if isinstance(data[0], dict):
+        df = pd.DataFrame(data)
+    else:
+        df = pd.DataFrame(data, columns=columns)
     st.write("進出站人數資料:")
-    for row in data:
-        st.write(row)
+    st.dataframe(df)
