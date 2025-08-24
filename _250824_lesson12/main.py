@@ -116,9 +116,10 @@ else:
     else:
         df = pd.DataFrame(data, columns=columns)
     st.write("進出站人數資料:")
-    st.dataframe(df)
-    # 將資料圖表化
+    # 日期格式化為 yyyy-mm-dd
+    df["日期"] = pd.to_datetime(df["日期"]).dt.strftime("%Y-%m-%d")
     chart_df = df[["日期", "進站人數", "出站人數"]].set_index("日期")
+    st.dataframe(df)
     st.line_chart(chart_df)
 
 
