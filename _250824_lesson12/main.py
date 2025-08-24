@@ -117,3 +117,9 @@ else:
         df = pd.DataFrame(data, columns=columns)
     st.write("進出站人數資料:")
     st.dataframe(df)
+    # 將資料圖表化
+    chart_df = df[["日期", "進站人數", "出站人數"]].set_index("日期")
+    st.line_chart(chart_df)
+
+
+
