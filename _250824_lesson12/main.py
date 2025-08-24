@@ -39,7 +39,7 @@ if station_names is None:
 
 
 # 定義常用車站
-common_stations = ["台北", "板橋", "新竹", "台中", "高雄", "其他"]
+common_stations = ["臺北", "板橋", "新竹", "臺中", "高雄", "其他"]
 
 # sidebar 顯示常用車站按鈕
 selected_common = st.sidebar.radio(
